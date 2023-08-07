@@ -1,2 +1,2 @@
 tasks:
-  - command: "docker-compose up -d && docker exec php sh -c 'exec docker-php-ext-install pdo_mysql && docker-php-ext-enable pdo_mysql && apachectl restart'"
+  - command: "docker-compose up -d && bash ./assets/scripts/enable-pdo_mysql.sh"
