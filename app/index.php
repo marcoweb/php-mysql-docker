@@ -1,8 +1,6 @@
 <?php
-// require './vendor/autoload.php';
+require './vendor/autoload.php';
 
-// use Application\DBConnection\MySQLConnection;
+use Application\DBConnection\MySQLConnection;
 
-// $db = new MySQLConnection();
-
-echo phpinfo();
+$db = new MySQLConnection();
