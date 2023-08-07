@@ -16,8 +16,6 @@ services:
     image: mysql:5.7
     container_name: mysql
     restart: always
-    ports:
-      - "3306:3306"
     environment:
       MYSQL_DATABASE: application
       MYSQL_USER: appuser
