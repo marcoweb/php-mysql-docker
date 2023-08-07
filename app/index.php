@@ -1,8 +1,8 @@
 <?php
-$db = new \PDO('mysql:host=localhost;dbname=testdb;charset=utf8mb4', 'username', 'password', array(
+// require './vendor/autoload.php';
 
-    \PDO::ATTR_EMULATE_PREPARES => false,
+// use Application\DBConnection\MySQLConnection;
 
-    \PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION
+// $db = new MySQLConnection();
 
-));
+echo phpinfo();
