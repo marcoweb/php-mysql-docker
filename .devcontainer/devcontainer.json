@@ -1,0 +1,9 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker
+{
+	"name": "PHP in Docker",
+
+	"forwardPorts": [3306, 80],
+
+	"postCreateCommand": "docker-compose up -d && composer install --working-dir=./app && bash ./assets/scripts/enable-pdo_mysql.sh"
+}
