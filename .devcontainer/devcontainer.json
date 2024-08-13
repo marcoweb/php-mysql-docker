@@ -3,7 +3,5 @@
 {
 	"name": "PHP in Docker",
 
-	"forwardPorts": [3306, 80],
-
-	"postCreateCommand": "docker-compose up -d && composer install --working-dir=./app && bash ./assets/scripts/enable-pdo_mysql.sh"
+	"forwardPorts": [3306, 80]
 }
