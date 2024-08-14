@@ -1,6 +1,6 @@
 services:
   apache:
-    image: 'php:7.2-apache'
+    image: 'php:8-apache'
     container_name: php
     restart: always
     ports:
@@ -11,7 +11,7 @@ services:
       - db
     
   db:
-    image: mysql:5.7
+    image: mysql
     container_name: mysql
     restart: always
     environment:
